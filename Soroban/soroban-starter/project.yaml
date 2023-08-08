@@ -1,10 +1,10 @@
 specVersion: "1.0.0"
 
-name: "soroban-subql-starter"
+name: "stellar-subql-starter"
 version: "0.0.1"
 runner:
   node:
-    name: "@subql/node-soroban"
+    name: "@subql/node-stellar"
     version: "*"
   query:
     name: "@subql/query"
@@ -30,13 +30,13 @@ network:
   # dictionary: "https://gx.api.subquery.network/sq/subquery/eth-dictionary"
 
 dataSources:
-  - kind: soroban/Runtime
-    startBlock: 50000
+  - kind: stellar/Runtime
+    startBlock: 280000
     mapping:
       file: "./dist/index.js"
       handlers:
         - handler: handleEvent
-          kind: soroban/EventHandler
+          kind: stellar/EventHandler
           filter:
           # contractId: ""
             topics:

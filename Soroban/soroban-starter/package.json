@@ -23,6 +23,7 @@
   "dependencies": {
     "@subql/common": "latest",
     "@subql/validator": "latest",
+    "@subql/types-stellar": "dev",
     "assert": "^2.0.0"
   },
   "devDependencies": {
